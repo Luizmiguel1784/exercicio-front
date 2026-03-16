@@ -1,7 +1,7 @@
 //Função tradicional
 function saudacao(nome, idade) {
 
-    console.log(`Olá ${nome}, vc tem ${idade}`);   
+    console.log(`Olá ${nome}, vc tem ${idade} anos de idade`);   
     
 }
 //Função anônima
