@@ -5,8 +5,6 @@ export default function Header() {
   
   <>
     <div className= "header">Gerenciador de Estudos</div>
-
- 
  
   </>
   )
