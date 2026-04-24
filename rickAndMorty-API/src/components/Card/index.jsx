@@ -1,12 +1,38 @@
 import axios from 'axios'
-export const Card =() => {
+import logoAlien from '../../assets/logoAlien.svg'
+import logoHeart from '../../assets/logoHeart.svg'
+import logoPlanet from '../../assets/logoPlanet.svg'
 
-    axios.get("https://rickandmortyapi.com/api/character")
-        .then(res => console.log(res))
-        .then(err => console.log(err))
+export const Card =({image,name,specie,status,location}) => {
 
     return(
-        <h1>Card</h1>
+
+        <div className='card-characters'>
+
+            <img src={image} alt={name} />
+            <h3>{name}</h3>
+            <div className='description-characters'>
+
+                <ul>
+
+                    <li>
+                        <img src={logoAlien} alt='' />
+                        {specie}
+                    </li>
+
+                    <li>
+                        <img src={logoHeart} alt="" />
+                        {status}
+                    </li>
+                    <li>
+                        <img src={logoPlanet} alt="" />
+                        {location}
+                    </li>
+
+                </ul>
+            </div>
+        
+        </div>
         
     )
 }
